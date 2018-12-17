@@ -1,0 +1,19 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int main()
+{
+    fstream input("input.txt");
+    fstream output("output.txt");
+    int b;
+    
+    input >> b;
+    output << b;
+    
+    input.close();
+    output.close();
+    
+    system("pause");
+}
